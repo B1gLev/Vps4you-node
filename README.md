@@ -24,27 +24,37 @@ Miután importáltük a könyvtárat, be kell jelentkeznünk a vps4you API-ba.
 ## Api kulcs?
 Az api kulcsot a vps4you oldalán a profil menünpontál tudjátok generálni vagy éppen újragenerálni. 
 
-Lépjünk is be az API-ba. 
+Lépjünk is be az API-ba. **(# jelölést szerkeszthetjük csak.)**
 
 ```
 const vps = require('vps4you'); 
 const client = vps.Client;
 
-client.login('https://vps4you.hu/api.php', 'email', 'api kulcs', 'service-list', (login) => {
+client.login('#https://vps4you.hu/api.php', '#email', '#api kulcs', 'service-list', (login) => {
     console.log(login)
 }); 
 ```
-Kérjük le a vps státuszát.
+A **getStatus** funkció segítségével kaphatjuk a vps szolgáltatásunknak az információit *(elérhető stb)*
 
 ```
 const vps = require('vps4you'); 
 const client = vps.Client;
 
-client.login('https://vps4you.hu/api.php', 'email', 'api kulcs', 'service-list', (login) => {
+client.login('#https://vps4you.hu/api.php', '#email', '#api kulcs', 'service-list', (login) => {
     console.log(login)
 }); 
 
-client.getStatus('vps-get-status', 'vps id', (callback) =>{
+client.getStatus('vps-get-status', '#vps id', (callback) =>{
     console.log(callback)
 });
 ``` 
+
+## Tövábbi funkciók
+
+```
+startVPS..
+stopVPS..
+shutdownVPS..
+restartVPS..
+
+Innen is köszönöm a segítséget Mányoki Ádámnak :heart: !
