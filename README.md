@@ -6,7 +6,7 @@ Szia! Ha bármi probléma merülne fel, kérlek keress Discordon *(BigLev#2342)*
 ```
 npm i vps4you --save
 ```
-# Mit vagyok én?
+# Mi vagyok én?
 Egy node.js könyvtár amely képes kommunikálni a vps4you api szerverével, így vezérelhetjük a saját VPS szerverünket is.
 
 # Api hívások
