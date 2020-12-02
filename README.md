@@ -6,3 +6,16 @@ Szia! Ha bármi probléma merülne fel, kérlek keress fel Discordon *(BigLev#23
 ```
 npm i vps4you --save
 ```
+# Mit vagyok én?
+Egy node.js könyvtár amely képes kommunikálni a vps4you api szerverével, így vezérelhetjük a saját VPS szerverünket is.
+
+# Api hívások
+Node-fetch és a form-data könyvtár segítségével történik.
+
+# Dokumentáció
+
+Első lépésként importáljük a könyvtárat.
+
+```
+const vps = require('vps-api');
+```
