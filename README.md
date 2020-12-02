@@ -17,5 +17,20 @@ Node-fetch és a form-data könyvtár segítségével történik.
 Első lépésként importáljük a könyvtárat.
 
 ```
-const vps = require('vps-api');
+const vps = require('vps4you');
+```
+Miután importáltük a könyvtárat, be kell jelentkeznünk a vps4you API-ba.
+
+## Api kulcs?
+Az api kulcsot a vps4you oldalán a profil menünpontál tudjátok generálni vagy éppen újragenerálni. 
+
+Lépjünk is be az API-ba. 
+
+```
+const vps = require('vps4you'); 
+const client = vps.Client;
+
+client.login('https://vps4you.hu/api.php', 'email', 'api kulcs', 'service-list', (login) => {
+    console.log(login)
+}); 
 ```
